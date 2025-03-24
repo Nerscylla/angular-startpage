@@ -1,5 +1,6 @@
 import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { search } from './searchHelper';
 
 @Component({
   selector: 'search-bar',
@@ -18,6 +19,6 @@ export class SearchBarComponent implements OnChanges {
   }
 
   onSearch() {
-    console.log('searchValue', this.searchValue);
+    location.href = search(this.searchValue);
   }
 }

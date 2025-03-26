@@ -3,6 +3,7 @@ import { bangsSearch } from './bangsSearch.json';
 
 // temporary shit
 let preferedSearchEngine: string = 'google';
+let redditSearch: boolean = true;
 
 let search = (searchString: string) => {
   if (searchString.startsWith('!')) {
@@ -32,6 +33,12 @@ let search = (searchString: string) => {
       return searchString.startsWith('http')
         ? searchString
         : `https://${searchString}`;
+    }
+    if (
+      (searchString.startsWith('r/') && redditSearch) ||
+      (searchString.startsWith('u/') && redditSearch)
+    ) {
+      return `https://www.reddit.com/${searchString}`;
     }
     return (
       bangsSearch[preferedSearchEngine as keyof typeof bangsSearch] +

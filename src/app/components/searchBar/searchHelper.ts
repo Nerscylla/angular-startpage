@@ -1,6 +1,9 @@
 import { bangs } from './bangsLinks.json';
 import { bangsSearch } from './bangsSearch.json';
 
+// temporary shit
+let preferedSearchEngine: string = 'google';
+
 let search = (searchString: string) => {
   if (searchString.startsWith('!')) {
     searchString = searchString.replace('!', '');
@@ -20,6 +23,20 @@ let search = (searchString: string) => {
         return bangs[searchString as keyof typeof bangs];
       }
     }
+  } else {
+    if (
+      /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/.test(
+        searchString
+      )
+    ) {
+      return searchString.startsWith('http')
+        ? searchString
+        : `https://${searchString}`;
+    }
+    return (
+      bangsSearch[preferedSearchEngine as keyof typeof bangsSearch] +
+      searchString
+    );
   }
   return searchString;
 };

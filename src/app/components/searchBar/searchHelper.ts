@@ -6,6 +6,7 @@ let preferedSearchEngine: string = 'google';
 let redditSearch: boolean = true;
 
 let search = (searchString: string) => {
+  // duckduckgo-ish bangs
   if (searchString.startsWith('!')) {
     searchString = searchString.replace('!', '');
     let SplitSearchString: string[] = searchString.split(' ');
@@ -18,10 +19,20 @@ let search = (searchString: string) => {
           urlBase = bangsSearch[firstWord as keyof typeof bangsSearch];
         }
         return urlBase + urlExtension;
+      } else {
+        return (
+          bangsSearch[preferedSearchEngine as keyof typeof bangsSearch] +
+          searchString
+        );
       }
     } else {
       if (searchString in bangs) {
         return bangs[searchString as keyof typeof bangs];
+      } else {
+        return (
+          bangsSearch[preferedSearchEngine as keyof typeof bangsSearch] +
+          searchString
+        );
       }
     }
   } else {

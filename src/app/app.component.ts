@@ -9,5 +9,5 @@ import { SearchBarComponent } from './components/searchBar/searchBar.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular-startpage';
+  title = 'startpage';
 }

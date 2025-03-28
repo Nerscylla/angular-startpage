@@ -31,3 +31,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - run: npm run build
+      - run: npm run ng -- deploy --base-href=/angular-startpage/ --name="TheCICD" --email=the.baum12345@gmail.com

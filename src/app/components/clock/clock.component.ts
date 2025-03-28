@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'clock-component',
-  template: `<div>{{ currentTime }}</div>`,
+  templateUrl: './clock.component.html',
   styleUrls: ['./clock.component.scss'],
 })
 export class ClockComponent implements OnInit {
@@ -12,7 +12,7 @@ export class ClockComponent implements OnInit {
 
   ngOnInit(): void {
     this.updateTime();
-    setInterval(() => this.updateTime(), 1000);
+    setInterval(() => this.updateTime(), 100);
   }
 
   updateTime(): void {

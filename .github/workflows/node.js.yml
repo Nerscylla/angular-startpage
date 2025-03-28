@@ -31,4 +31,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: deploy
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npm run ng -- deploy --base-href=/angular-startpage/ --name="TheCICD" --email=the.baum12345@gmail.com

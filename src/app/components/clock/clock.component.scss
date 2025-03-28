@@ -1,0 +1,19 @@
+:host {
+  // self center in it self
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+span {
+  // coloring
+  background-color: var(--widget-color);
+  color: var(--fg-color);
+  // sizing
+  width: min-content;
+  height: min-content;
+  padding: 5px 15px;
+  // rounding
+  border-radius: 10px;
+}

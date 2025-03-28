@@ -1,0 +1,21 @@
+:host {
+  // app grid
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+search-bar {
+  // search bar positioning
+  grid-column: 2;
+  grid-row: 2;
+}
+
+clock-component {
+  // clock positioning
+  grid-column: 2;
+  grid-row: 1;
+}

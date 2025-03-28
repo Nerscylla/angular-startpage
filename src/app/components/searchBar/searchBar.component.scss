@@ -1,0 +1,34 @@
+input {
+  // reset
+  outline: none;
+  // coloring
+  background-color: var(--widget-color);
+  border: 2.5px var(--accent-color) solid;
+  color: var(--fg-color);
+  // rounding
+  border-radius: 100vh;
+  // text design
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  // animation
+  transition: 250ms;
+  // sizing
+  width: calc(100% - 30px);
+  height: calc(30% - 10px);
+}
+
+:host {
+  // centering
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // scaling
+  height: 100%;
+  width: 100%;
+}
+
+input:focus {
+  // focus effect
+  border-width: 5px;
+}

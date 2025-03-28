@@ -9,9 +9,9 @@ import { search } from './searchHelper';
   styleUrls: ['./searchBar.component.scss'],
 })
 export class SearchBarComponent implements OnChanges {
-  searchValue: string;
+  searchvalue: string;
   constructor() {
-    this.searchValue = '';
+    this.searchvalue = '';
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -19,6 +19,6 @@ export class SearchBarComponent implements OnChanges {
   }
 
   onSearch() {
-    location.href = search(this.searchValue);
+    location.href = search(this.searchvalue);
   }
 }

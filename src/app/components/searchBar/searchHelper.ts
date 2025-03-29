@@ -1,5 +1,5 @@
-import { bangs } from './bangsLinks.json';
-import { bangsSearch } from './bangsSearch.json';
+import { barData } from './barData.json';
+const { bangs, bangsSearch, engines } = barData;
 
 // temporary shit
 let preferedSearchEngine: string = 'google';
@@ -51,11 +51,8 @@ let search = (searchString: string) => {
 		) {
 			return `https://www.reddit.com/${searchString}`;
 		}
-		return (
-			bangsSearch[preferedSearchEngine as keyof typeof bangsSearch] + searchString
-		);
+		return engines[preferedSearchEngine as keyof typeof engines] + searchString;
 	}
-	return searchString;
 };
 
 export { search };

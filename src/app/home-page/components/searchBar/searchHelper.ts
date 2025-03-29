@@ -1,4 +1,4 @@
-import { barData } from './barData.json';
+import { barData } from '../../../../../public/barData.json';
 const { bangs, bangsSearch, engines } = barData;
 
 // temporary shit

@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { ClockComponent } from './components/clock/clock.component';
-import { SearchBarComponent } from './components/searchBar/searchBar.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
 	selector: 'app-root',
-	templateUrl: './app.component.html',
-	imports: [ClockComponent, SearchBarComponent],
+	template: '<router-outlet></router-outlet>',
+	imports: [RouterOutlet],
 	styleUrl: './app.component.scss',
 })
 export class AppComponent {

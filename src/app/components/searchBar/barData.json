@@ -30,7 +30,7 @@
 			"yep.com": "https://yep.com/web?q=",
 			"you.com": "https://you.com/search?q="
 		},
-		"links": {
+		"bangs": {
 			"airbnb": "https://www.airbnb.com/",
 			"apple music": "https://music.apple.com/",
 			"audible": "https://www.audible.com/",

@@ -3,22 +3,22 @@ import { FormsModule } from '@angular/forms';
 import { search } from './searchHelper';
 
 @Component({
-  selector: 'search-bar',
-  imports: [FormsModule],
-  templateUrl: './searchBar.component.html',
-  styleUrls: ['./searchBar.component.scss'],
+	selector: 'search-bar',
+	imports: [FormsModule],
+	templateUrl: './searchBar.component.html',
+	styleUrls: ['./searchBar.component.scss'],
 })
 export class SearchBarComponent implements OnChanges {
-  searchvalue: string;
-  constructor() {
-    this.searchvalue = '';
-  }
+	searchvalue: string;
+	constructor() {
+		this.searchvalue = '';
+	}
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('changes', changes);
-  }
+	ngOnChanges(changes: SimpleChanges): void {
+		console.log('changes', changes);
+	}
 
-  onSearch() {
-    location.href = search(this.searchvalue);
-  }
+	onSearch() {
+		location.href = search(this.searchvalue);
+	}
 }

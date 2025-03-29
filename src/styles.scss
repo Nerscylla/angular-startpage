@@ -1,17 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  // temp colors
-  --bg-color: #282828;
-  --widget-color: #1d2021;
-  --fg-color: #fbf1c7;
-  --accent-color: #fb4934;
+	// temp colors
+	--bg-color: #282828;
+	--widget-color: #1d2021;
+	--fg-color: #fbf1c7;
+	--accent-color: #fb4934;
 }
 
 body {
-  // bg
-  background-color: var(--bg-color);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 100vh;
-  overflow-y: hidden;
+	// bg
+	background-color: var(--bg-color);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	height: 100vh;
+	overflow-y: hidden;
 }

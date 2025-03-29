@@ -97,6 +97,18 @@
 			"weather.com": "https://weather.com/",
 			"wikipedia": "https://www.wikipedia.org/",
 			"youtube": "https://www.youtube.com/"
+		},
+		"bangsSearch": {
+			"youtube": "https://www.youtube.com/results?search_query=",
+			"wikipedia": "https://en.wikipedia.org/w/index.php?search=",
+			"google": "https://www.google.com/search?q=",
+			"bing": "https://www.bing.com/search?q=",
+			"duckduckgo": "https://duckduckgo.com/?q=",
+			"yahoo": "https://search.yahoo.com/search?p=",
+			"twitter": "https://twitter.com/search?q=",
+			"facebook": "https://www.facebook.com/search/top?q=",
+			"reddit": "https://www.reddit.com/search/?q=",
+			"amazon": "https://www.amazon.com/s?k="
 		}
 	}
 }

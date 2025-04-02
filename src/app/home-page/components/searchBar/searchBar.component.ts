@@ -1,6 +1,6 @@
 import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { search } from './searchHelper';
+import { search } from '../../../helpers/searchHelper';
 
 @Component({
 	selector: 'search-bar',

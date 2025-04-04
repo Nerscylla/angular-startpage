@@ -1,4 +1,4 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { search } from '../../../helpers/searchHelper';
 
@@ -8,14 +8,10 @@ import { search } from '../../../helpers/searchHelper';
 	templateUrl: './searchBar.component.html',
 	styleUrls: ['./searchBar.component.scss'],
 })
-export class SearchBarComponent implements OnChanges {
+export class SearchBarComponent {
 	searchvalue: string;
 	constructor() {
 		this.searchvalue = '';
-	}
-
-	ngOnChanges(changes: SimpleChanges): void {
-		console.log('changes', changes);
 	}
 
 	onSearch() {

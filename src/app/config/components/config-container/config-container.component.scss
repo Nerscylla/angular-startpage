@@ -1,4 +1,4 @@
-.confcont {
+.flexcont {
 	width: 100%;
 	border: var(--accent-color) 3px solid;
 	border-radius: 5px;
@@ -6,4 +6,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.confcont {
+	margin: 10px;
 }

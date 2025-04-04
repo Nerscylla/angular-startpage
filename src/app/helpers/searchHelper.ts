@@ -1,12 +1,18 @@
 import { barData } from '../../../public/barData.json';
 const { bangs, bangsSearch, engines } = barData;
+import { getConfig, setConfig } from './configurationHelper';
+
+let preferedSearchEngine: string =
+	getConfig('preferedSearchEngine') || 'duckduckgo';
 
 // temporary shit
-let preferedSearchEngine: string = 'google';
 let redditSearch: boolean = true;
 
 let search = (searchString: string) => {
 	// duckduckgo-ish bangs
+	if (!Object.keys(engines).includes(preferedSearchEngine)) {
+		setConfig('preferedSearchEngine', 'google');
+	}
 	if (searchString.startsWith('!')) {
 		searchString = searchString.replace('!', '');
 		let SplitSearchString: string[] = searchString.split(' ');

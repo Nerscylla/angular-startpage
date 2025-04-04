@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { search } from '../../../helpers/searchHelper';
+import { getConfig } from '../../../helpers/configurationHelper';
 
 @Component({
 	selector: 'search-bar',
@@ -10,8 +11,13 @@ import { search } from '../../../helpers/searchHelper';
 })
 export class SearchBarComponent {
 	searchvalue: string;
+	placeholderText: string = 'Search...';
+
 	constructor() {
 		this.searchvalue = '';
+		if (getConfig('preferedSearchEngine')) {
+			this.placeholderText = 'search ' + getConfig('preferedSearchEngine');
+		}
 	}
 
 	onSearch() {

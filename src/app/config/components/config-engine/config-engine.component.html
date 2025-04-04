@@ -1,1 +1,6 @@
-<p>config-engine works!</p>
+<!DOCTYPE html>
+<label for="se-select">Select prefered Search Engine:</label>
+<select name="se-select" id="se-select" [(ngModel)]="engine" (change)="updateEngine()">
+    <option value="default" disabled>&gt;--select search engine--&lt;</option>
+    <option *ngFor="let engine of enginesArr" [value]="engine">{{engine}}</option>
+</select>

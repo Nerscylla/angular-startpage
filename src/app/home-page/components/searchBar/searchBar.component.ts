@@ -10,16 +10,17 @@ import { getConfig } from '../../../helpers/configurationHelper';
 	styleUrls: ['./searchBar.component.scss'],
 })
 export class SearchBarComponent {
-	searchvalue: string;
+	searchvalue: string = '';
 	placeholderText: string = 'Search...';
 
 	constructor() {
-		this.searchvalue = '';
+		// set placeholder
 		if (getConfig('preferedSearchEngine')) {
 			this.placeholderText = 'search ' + getConfig('preferedSearchEngine');
 		}
 	}
 
+	// call search from external file
 	onSearch() {
 		location.href = search(this.searchvalue);
 	}

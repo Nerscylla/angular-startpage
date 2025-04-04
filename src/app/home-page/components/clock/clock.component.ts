@@ -8,14 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ClockComponent implements OnInit {
 	currentTime: string = '';
 
-	constructor() {}
-
 	ngOnInit(): void {
-		this.updateTime();
+		// interval
 		setInterval(() => this.updateTime(), 100);
 	}
 
 	updateTime(): void {
+		// self explanatory
 		const now = new Date();
 		this.currentTime = now.toLocaleTimeString();
 	}

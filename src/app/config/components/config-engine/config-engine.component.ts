@@ -13,16 +13,19 @@ const { engines } = barData;
 })
 export class ConfigEngineComponent implements OnInit {
 	engine: string = '';
-	enginesArr: string[] = this.getEnginesKeys();
 
+	// populate array for use in dropdown
+	enginesArr: string[] = this.getEnginesKeys();
 	getEnginesKeys(): string[] {
 		return Object.keys(engines);
 	}
 
+	// change configuration on selection
 	updateEngine() {
 		setConfig('preferedSearchEngine', this.engine);
 	}
 
+	// load the default engine into the dropdown
 	ngOnInit() {
 		this.engine = getConfig('preferedSearchEngine');
 	}

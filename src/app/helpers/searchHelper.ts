@@ -11,34 +11,30 @@ let redditSearch: boolean = true;
 let search = (searchString: string) => {
 	// duckduckgo-ish bangs
 	if (!Object.keys(engines).includes(preferedSearchEngine)) {
-		setConfig('preferedSearchEngine', 'google');
+		setConfig('preferedSearchEngine', 'duckduckgo');
 	}
 	if (searchString.startsWith('!')) {
 		searchString = searchString.replace('!', '');
 		let SplitSearchString: string[] = searchString.split(' ');
 		if (SplitSearchString.length > 1) {
-			if (SplitSearchString[0] in bangsSearch) {
+			if (SplitSearchString[0] in bangsSearch || SplitSearchString[0] in engines) {
 				let firstWord = SplitSearchString.shift();
 				let urlExtension: string = SplitSearchString.join('%20');
 				let urlBase: string = '';
 				if (firstWord) {
-					urlBase = bangsSearch[firstWord as keyof typeof bangsSearch];
+					urlBase =
+						bangsSearch[firstWord as keyof typeof bangsSearch] ||
+						engines[firstWord as keyof typeof engines];
 				}
 				return urlBase + urlExtension;
 			} else {
-				return (
-					bangsSearch[preferedSearchEngine as keyof typeof bangsSearch] +
-					searchString
-				);
+				return engines[preferedSearchEngine as keyof typeof engines] + searchString;
 			}
 		} else {
 			if (searchString in bangs) {
 				return bangs[searchString as keyof typeof bangs];
 			} else {
-				return (
-					bangsSearch[preferedSearchEngine as keyof typeof bangsSearch] +
-					searchString
-				);
+				return engines[preferedSearchEngine as keyof typeof engines] + searchString;
 			}
 		}
 	} else {

@@ -1,0 +1,9 @@
+.confcont {
+	width: 100%;
+	border: var(--accent-color) 3px solid;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

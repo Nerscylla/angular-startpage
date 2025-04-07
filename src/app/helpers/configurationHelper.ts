@@ -4,14 +4,17 @@ let configuration: { [key: string]: any } = JSON.parse(
 );
 
 // get specifig key from configuration
-let getConfig: Function = (configKey: string): any => {
+type getConfigFunc = (configKey: string) => any;
+let getConfig: getConfigFunc = (configKey) => {
 	return configuration[configKey];
 };
 
 // set configuration by key
-let setConfig: Function = (configKey: string, configVal: any): void => {
+type setConfigFunc = (configKey: string, configVal: any) => void;
+let setConfig: setConfigFunc = (configKey, configVal) => {
 	// set temporary
 	configuration[configKey] = configVal;
+	console.log(configKey + ':', configVal);
 	// store in localStorage
 	localStorage.setItem(
 		'angular-startpage:config',

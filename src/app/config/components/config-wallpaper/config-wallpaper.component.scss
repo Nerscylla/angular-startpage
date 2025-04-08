@@ -1,0 +1,12 @@
+:host {
+	max-width: 80%;
+}
+
+li {
+	max-width: 80vw;
+	a {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: break-word;
+	}
+}

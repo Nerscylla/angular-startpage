@@ -68,9 +68,11 @@ let bangsLinkFunc = (bang: string, searchString: string) => {
 };
 
 let redditLinking = (searchString: string) => {
+	// skip computing if feature is disabled
 	if (!redditRedirect) {
 		return defaultEngineSearch(searchString);
 	}
+	// reddit or search
 	if (searchString.startsWith('r/') || searchString.startsWith('u/')) {
 		return `https://www.reddit.com/${searchString}`;
 	}

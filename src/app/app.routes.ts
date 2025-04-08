@@ -4,5 +4,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 export const routes: Routes = [
 	{ path: 'config', component: ConfigComponent },
+	{ path: 'angular-startpage/config', component: ConfigComponent },
 	{ path: '**', component: HomePageComponent },
 ];

@@ -17,7 +17,7 @@ let search = (searchString: string) => {
 		)
 	) {
 		// go on to bangs if there is no uri
-		return bangsChecking(searchString);
+		return bangsChecking(searchString.trim());
 	} else {
 		// add https:// if !http && !https present
 		return searchString.startsWith('http') || searchString.startsWith('https')

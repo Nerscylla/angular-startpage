@@ -16,7 +16,7 @@ export class HomePageComponent implements OnInit {
 	ngOnInit(): void {
 		this.wallpaperIndex = getConfig('wallpaperCurrentIndex') || 0;
 		this.wallpaperUrls = getConfig('wallpaperUrls');
-		if (this.wallpaperUrls) {
+		if (this.wallpaperUrls && this.wallpaperUrls.length > 0) {
 			this.setBodyBackground();
 		}
 	}

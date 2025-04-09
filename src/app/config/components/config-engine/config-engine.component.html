@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<label for="se-select">Select prefered Search Engine:</label>
-<select name="se-select" id="se-select" [(ngModel)]="engine" (change)="updateEngine()">
-    <!-- welp, default isn't defaulting -->
-    <option value="default" disabled>&gt;--select search engine--&lt;</option>
-    <!-- populate from js array -->
-    <option *ngFor="let engine of enginesArr" [value]="engine">{{engine}}</option>
-</select>
+<div class="center-row-flex">
+    <label for="se-select">Select prefered Search Engine:</label>
+    <select name="se-select" id="se-select" [(ngModel)]="engine" (change)="updateEngine()">
+        <!-- welp, default isn't defaulting -->
+        <option value="default" disabled>&gt;--select search engine--&lt;</option>
+        <!-- populate from js array -->
+        <option *ngFor="let engine of enginesArr" [value]="engine">{{engine}}</option>
+    </select>
+</div>

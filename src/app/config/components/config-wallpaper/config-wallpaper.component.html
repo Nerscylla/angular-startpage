@@ -5,4 +5,7 @@
         <button (click)="removeWallpaperUrl(i)">X</button>
     </li>
 </ul>
-<input type="text" [(ngModel)]="newWallpaperUrl" (keydown.enter)="addWallpaperUrl()" />
+<div class="center-row-flex">
+    <label for="wallURL">New Wallpaper URL:</label>
+    <input type="text" name="wallURL" id="wallURL" [(ngModel)]="newWallpaperUrl" (keydown.enter)="addWallpaperUrl()" />
+</div>

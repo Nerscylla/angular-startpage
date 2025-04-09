@@ -1,4 +1,15 @@
-// temporary styling
-label {
-	margin-right: 20px;
+select {
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+	border: 3px solid var(--accent-color);
+	border-radius: 5px;
+	padding: 8px;
+	font-family: inherit;
+	outline: none;
+	cursor: pointer;
+
+	option {
+		background-color: var(--bg-color);
+		color: var(--fg-color);
+	}
 }

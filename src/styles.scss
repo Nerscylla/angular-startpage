@@ -23,3 +23,19 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.center-row-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.center-col-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}

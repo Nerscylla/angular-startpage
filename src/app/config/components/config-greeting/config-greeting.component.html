@@ -1,0 +1,22 @@
+<div class="center-col-flex">
+    <div class="center-row-flex">
+        <label for="greeting-enable">Enable Greeting:</label>
+        <input type="checkbox" name="greeting-enable" id="greeting-enable" [(ngModel)]="greetingEnable"
+            (change)="writeConfigCallback()">
+    </div>
+    <div class="center-row-flex" *ngIf="greetingEnable">
+        <label for="greeting-prefix-enable">Prefix Greeting:</label>
+        <input type="checkbox" name="greeting-prefix-enable" id="greeting-prefix-enable"
+            [(ngModel)]="greetingPrefixEnable" (change)="writeConfigCallback()">
+    </div>
+    <div class="center-row-flex" *ngIf="greetingPrefixEnable && greetingEnable">
+        <label for="greeting-prefix">Greeting Prefix:</label>
+        <input type="text" name="greeting-prefix" id="greeting-prefix" [(ngModel)]="greetingPrefix"
+            (change)="writeConfigCallback()">
+    </div>
+    <div class="center-row-flex" *ngIf="greetingEnable">
+        <label for="greeting-text">Greeting Text:</label>
+        <input type="text" name="greeting-text" id="greeting-text" [(ngModel)]="greetingText"
+            (change)="writeConfigCallback()">
+    </div>
+</div>

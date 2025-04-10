@@ -3,6 +3,7 @@ import { ConfigContainerComponent } from './components/config-container/config-c
 import { ConfigEngineComponent } from './components/config-engine/config-engine.component';
 import { ConfigRedditComponent } from './components/config-reddit/config-reddit.component';
 import { ConfigWallpaperComponent } from './components/config-wallpaper/config-wallpaper.component';
+import { ConfigGreetingComponent } from './components/config-greeting/config-greeting.component';
 
 @Component({
 	selector: 'app-config',
@@ -11,6 +12,7 @@ import { ConfigWallpaperComponent } from './components/config-wallpaper/config-w
 		ConfigEngineComponent,
 		ConfigRedditComponent,
 		ConfigWallpaperComponent,
+		ConfigGreetingComponent,
 	],
 	templateUrl: './config.component.html',
 	styleUrl: './config.component.scss',

@@ -9,16 +9,19 @@
   - [X] Bangs to search page
   - [X] Reddit ("u/" and "r/") integration
   - [X] styling
-  - [ ] customise search engine
+  - [X] customise search engine
   - [ ] icon
 - [ ] clock
   - [X] working
   - [ ] styling
+  - [ ] greeting display
 - [ ] config
-  - [ ] default engine
-  - [ ] background image(-s)
+  - [X] Greeting
+  - [X] default engine
+  - [ ] completely custom search engine
+  - [X] background image(-s)
   - [ ] layout
-  - [ ] reddit integration toggle
+  - [X] reddit integration toggle
   - [ ] bookmarks
   - [ ] themes
     - [ ] custom colors

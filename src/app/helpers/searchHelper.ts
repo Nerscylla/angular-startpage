@@ -2,11 +2,11 @@ import { barData } from '../../../public/barData.json';
 const { bangs, bangsSearch, engines } = barData;
 import { getConfig } from './configurationHelper';
 
+// get configuration stuff
 let preferedSearchEngine: string =
 	getConfig('preferedSearchEngine') || 'duckduckgo';
-
-// temporary shit
 let redditRedirect: boolean = getConfig('redditRedirects') || false;
+let bangsNoBang: boolean = getConfig('bangsNoBang') || false;
 
 // main search
 let search = (searchString: string) => {
@@ -28,7 +28,7 @@ let search = (searchString: string) => {
 
 let bangsChecking = (searchString: string) => {
 	// check for bang start
-	if (!searchString.startsWith('!')) {
+	if (!searchString.startsWith('!') && !bangsNoBang) {
 		// go on to reddit checks if no bangs are present
 		return redditLinking(searchString);
 	}

@@ -7,6 +7,7 @@
 - [ ] Search Bar
   - [X] Bangs to go to page
   - [X] Bangs to search page
+  - [X] Bangs without prefix if enabled
   - [X] Reddit ("u/" and "r/") integration
   - [X] styling
   - [X] customise search engine
@@ -16,6 +17,7 @@
   - [ ] styling
   - [ ] greeting display
 - [ ] config
+  - [X] Bangs without prefix
   - [X] Greeting
   - [X] default engine
   - [ ] completely custom search engine

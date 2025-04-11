@@ -1,16 +1,190 @@
 {
 	"themeColors": {
-		"gruvboxDark": {
-			"bgColor": "#282828",
-			"fgColor": "#fbf1c7",
-			"accentColor": "#fb4934",
-			"widgetColor": "#1d2021"
+		"amberTerminal": {
+			"accentColor": "#ffaa00",
+			"bgColor": "#1a1a1a",
+			"fgColor": "#ffdd99",
+			"widgetColor": "#2a2a2a"
 		},
 		"baumColored": {
+			"accentColor": "#6247AA",
 			"bgColor": "#062726",
 			"fgColor": "#E0E2DB",
-			"accentColor": "#6247AA",
 			"widgetColor": "#102B3F"
+		},
+		"blueberryMilk": {
+			"accentColor": "#a0b9f2",
+			"bgColor": "#1f2430",
+			"fgColor": "#e3ecff",
+			"widgetColor": "#2b303d"
+		},
+		"cartridgeLabel": {
+			"accentColor": "#e05263",
+			"bgColor": "#2f2f38",
+			"fgColor": "#e8e5da",
+			"widgetColor": "#3e3e49"
+		},
+		"dosClassic": {
+			"accentColor": "#00ffff",
+			"bgColor": "#000000",
+			"fgColor": "#ffffff",
+			"widgetColor": "#1a1a1a"
+		},
+		"dracula": {
+			"accentColor": "#ff5555",
+			"bgColor": "#282a36",
+			"fgColor": "#f8f8f2",
+			"widgetColor": "#44475a"
+		},
+		"duskyPeach": {
+			"accentColor": "#f4b393",
+			"bgColor": "#2c1e1a",
+			"fgColor": "#ffe6db",
+			"widgetColor": "#3a2a25"
+		},
+		"dustyRose": {
+			"accentColor": "#f2a7b3",
+			"bgColor": "#2e1f25",
+			"fgColor": "#f9e4e8",
+			"widgetColor": "#3b2a31"
+		},
+		"everforestDark": {
+			"accentColor": "#E67E80",
+			"bgColor": "#232A2E",
+			"fgColor": "#D3C6AA",
+			"widgetColor": "#343F44"
+		},
+		"everforestLight": {
+			"accentColor": "#F85552",
+			"bgColor": "#EFEBD4",
+			"fgColor": "#5C6A72",
+			"widgetColor": "#FDF6E3"
+		},
+		"gridLineCity": {
+			"accentColor": "#fcee09",
+			"bgColor": "#130f40",
+			"fgColor": "#dcd6f7",
+			"widgetColor": "#1c164f"
+		},
+		"gruvboxDark": {
+			"accentColor": "#fb4934",
+			"bgColor": "#282828",
+			"fgColor": "#fbf1c7",
+			"widgetColor": "#1d2021"
+		},
+		"gruvboxLight": {
+			"accentColor": "#9d0006",
+			"bgColor": "#f9f5d7",
+			"fgColor": "#282828",
+			"widgetColor": "#f2e5bc"
+		},
+		"highContrast": {
+			"accentColor": "red",
+			"bgColor": "black",
+			"fgColor": "white",
+			"widgetColor": "#222"
+		},
+		"lavenderDream": {
+			"accentColor": "#caa9e0",
+			"bgColor": "#f6f0fa",
+			"fgColor": "#5e4a72",
+			"widgetColor": "#e8dff4"
+		},
+		"matchaMilk": {
+			"accentColor": "#c5dea4",
+			"bgColor": "#f4f8f1",
+			"fgColor": "#4a5f3c",
+			"widgetColor": "#e7f2e2"
+		},
+		"miamiVice": {
+			"accentColor": "#50ffd7",
+			"bgColor": "#1f1235",
+			"fgColor": "#fdfdfd",
+			"widgetColor": "#2e1a47"
+		},
+		"midnightMint": {
+			"accentColor": "#a1e9c5",
+			"bgColor": "#1f2d2d",
+			"fgColor": "#d4f7ee",
+			"widgetColor": "#2c3a3a"
+		},
+		"monokai": {
+			"accentColor": "#f92672",
+			"bgColor": "#272822",
+			"fgColor": "#f8f8f2",
+			"widgetColor": "#3e3d32"
+		},
+		"neonSunset": {
+			"accentColor": "#ff6ac1",
+			"bgColor": "#1a1a2e",
+			"fgColor": "#fceaff",
+			"widgetColor": "#2d2a45"
+		},
+		"nord": {
+			"accentColor": "#88c0d0",
+			"bgColor": "#2e3440",
+			"fgColor": "#d8dee9",
+			"widgetColor": "#3b4252"
+		},
+		"oliveDesk": {
+			"accentColor": "#c4b454",
+			"bgColor": "#2c2f24",
+			"fgColor": "#f2f1d1",
+			"widgetColor": "#3a3d30"
+		},
+		"pastelMint": {
+			"accentColor": "#a1e3d8",
+			"bgColor": "#e3fcec",
+			"fgColor": "#375e55",
+			"widgetColor": "#d1f0e2"
+		},
+		"pastelPeach": {
+			"accentColor": "#f7a8a8",
+			"bgColor": "#fff1ee",
+			"fgColor": "#704646",
+			"widgetColor": "#ffe3de"
+		},
+		"retroWave": {
+			"accentColor": "#08f7fe",
+			"bgColor": "#0f0e17",
+			"fgColor": "#a7a9be",
+			"widgetColor": "#1a1924"
+		},
+		"rosePineMoon": {
+			"accentColor": "#56526e",
+			"bgColor": "#232136",
+			"fgColor": "#e0def4",
+			"widgetColor": "#2a273f"
+		},
+		"solarizedDark": {
+			"accentColor": "#b58900",
+			"bgColor": "#002b36",
+			"fgColor": "#839496",
+			"widgetColor": "#073642"
+		},
+		"stormyLilac": {
+			"accentColor": "#c4a7e7",
+			"bgColor": "#2b2533",
+			"fgColor": "#e0d6f5",
+			"widgetColor": "#372f42"
+		},
+		"tokyonight": {
+			"accentColor": "#7aa2f7",
+			"bgColor": "#1a1b26",
+			"fgColor": "#c0caf5",
+			"widgetColor": "#24283b"
+		},
+		"vaporWave": {
+			"accentColor": "#ff71ce",
+			"bgColor": "#2b1d38",
+			"fgColor": "#f4f1fa",
+			"widgetColor": "#3a2950"
+		},
+		"vintagePlastic": {
+			"accentColor": "#7c7c7c",
+			"bgColor": "#f3f3ec",
+			"fgColor": "#333333",
+			"widgetColor": "#e1e1d6"
 		}
 	}
 }

@@ -24,6 +24,12 @@
 			"fgColor": "#e8e5da",
 			"widgetColor": "#3e3e49"
 		},
+		"charcoalGray": {
+			"accentColor": "#555555",
+			"bgColor": "#121212",
+			"fgColor": "#bbbbbb",
+			"widgetColor": "#333333"
+		},
 		"dosClassic": {
 			"accentColor": "#00ffff",
 			"bgColor": "#000000",
@@ -59,6 +65,12 @@
 			"bgColor": "#EFEBD4",
 			"fgColor": "#5C6A72",
 			"widgetColor": "#FDF6E3"
+		},
+		"foggyMorning": {
+			"accentColor": "#dcdcdc",
+			"bgColor": "#f5f5f5",
+			"fgColor": "#606060",
+			"widgetColor": "#e0e0e0"
 		},
 		"gridLineCity": {
 			"accentColor": "#fcee09",
@@ -108,6 +120,12 @@
 			"fgColor": "#d4f7ee",
 			"widgetColor": "#2c3a3a"
 		},
+		"monochromeSlate": {
+			"accentColor": "#c0c0c0",
+			"bgColor": "#1e1e1e",
+			"fgColor": "#d0d0d0",
+			"widgetColor": "#2d2d2d"
+		},
 		"monokai": {
 			"accentColor": "#f92672",
 			"bgColor": "#272822",
@@ -143,6 +161,24 @@
 			"bgColor": "#fff1ee",
 			"fgColor": "#704646",
 			"widgetColor": "#ffe3de"
+		},
+		"pebbleStone": {
+			"accentColor": "#8c8c8c",
+			"bgColor": "#2b2b2b",
+			"fgColor": "#b0b0b0",
+			"widgetColor": "#424242"
+		},
+		"pureMonochromeDark": {
+			"accentColor": "#ffffff",
+			"bgColor": "#000000",
+			"fgColor": "#999999",
+			"widgetColor": "#333333"
+		},
+		"pureMonochromeLight": {
+			"accentColor": "#000000",
+			"bgColor": "#ffffff",
+			"fgColor": "#333333",
+			"widgetColor": "#999999"
 		},
 		"retroWave": {
 			"accentColor": "#08f7fe",

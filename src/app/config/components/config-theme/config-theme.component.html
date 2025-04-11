@@ -1,0 +1,6 @@
+<div class="center-row-flex">
+    <label for="theme-select">Select Theme:</label>
+    <select name="theme-select" id="theme-select" [(ngModel)]="theme" (change)="updateConfig()">
+        <option *ngFor="let item of themes" [value]="item[0]">{{ item[1] }}</option>
+    </select>
+</div>

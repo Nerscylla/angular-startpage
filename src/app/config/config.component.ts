@@ -6,6 +6,7 @@ import { ConfigWallpaperComponent } from './components/config-wallpaper/config-w
 import { ConfigGreetingComponent } from './components/config-greeting/config-greeting.component';
 import { ConfigBangsNoBangComponent } from './components/config-bangs-no-bang/config-bangs-no-bang.component';
 import { ConfigCustomPageTitleComponent } from './components/config-custom-page-title/config-custom-page-title.component';
+import { ConfigThemeComponent } from './components/config-theme/config-theme.component';
 
 @Component({
 	selector: 'app-config',
@@ -17,6 +18,7 @@ import { ConfigCustomPageTitleComponent } from './components/config-custom-page-
 		ConfigGreetingComponent,
 		ConfigBangsNoBangComponent,
 		ConfigCustomPageTitleComponent,
+		ConfigThemeComponent,
 	],
 	templateUrl: './config.component.html',
 	styleUrl: './config.component.scss',

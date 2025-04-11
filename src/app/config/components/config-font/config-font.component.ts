@@ -8,8 +8,10 @@ import { FormsModule } from '@angular/forms';
 	templateUrl: './config-font.component.html',
 })
 export class ConfigFontComponent {
-	fontFamily: string = getConfig('fontFamily') || 'Roboto';
+	// get fontFamily from config or default to system-ui
+	fontFamily: string = getConfig('fontFamily') || 'system-ui';
 
+	// callback to save configuration
 	updateConfig() {
 		setConfig('fontFamily', this.fontFamily);
 	}

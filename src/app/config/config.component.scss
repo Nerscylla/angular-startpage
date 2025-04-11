@@ -1,13 +1,13 @@
 config-container {
 	width: min(100%, 1200px);
 	display: block;
+	margin: 10px;
 }
 
 div#cont {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
 	justify-content: center;
 	align-items: center;
 }

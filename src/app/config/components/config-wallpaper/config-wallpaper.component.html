@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <ul>
+    <!-- list wallpaper urls -->
     <li *ngFor="let url of wallpaperUrls; let i = index">
         <a href="{{url}}">{{url}}</a>
         <button (click)="removeWallpaperUrl(i)">X</button>

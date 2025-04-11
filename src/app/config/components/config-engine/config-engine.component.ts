@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { getConfig, setConfig } from '../../../helpers/configurationHelper';
 import { FormsModule } from '@angular/forms';
@@ -10,8 +10,9 @@ const { engines } = barData;
 	imports: [FormsModule, CommonModule],
 	templateUrl: './config-engine.component.html',
 })
-export class ConfigEngineComponent implements OnInit {
-	engine: string = '';
+export class ConfigEngineComponent {
+	// Get the default engine from config or default to ddg
+	engine: string = getConfig('preferedSearchEngine') || 'duckduckgo';
 
 	// populate array for use in dropdown
 	enginesArr: string[] = this.getEnginesKeys();
@@ -22,10 +23,5 @@ export class ConfigEngineComponent implements OnInit {
 	// change configuration on selection
 	updateEngine() {
 		setConfig('preferedSearchEngine', this.engine);
-	}
-
-	// load the default engine into the dropdown
-	ngOnInit() {
-		this.engine = getConfig('preferedSearchEngine');
 	}
 }

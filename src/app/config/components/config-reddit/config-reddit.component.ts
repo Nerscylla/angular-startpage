@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { getConfig, setConfig } from '../../../helpers/configurationHelper';
 
@@ -7,14 +7,10 @@ import { getConfig, setConfig } from '../../../helpers/configurationHelper';
 	imports: [FormsModule],
 	templateUrl: './config-reddit.component.html',
 })
-export class ConfigRedditComponent implements OnInit {
-	redditBoxChecked: boolean = false;
+export class ConfigRedditComponent {
+	redditBoxChecked: boolean = getConfig('redditRedirects') || false;
 
-	ngOnInit() {
-		this.redditBoxChecked = getConfig('redditRedirects');
-	}
-
-	updateRedditRedirects() {
+	updateConfig() {
 		setConfig('redditRedirects', this.redditBoxChecked);
 	}
 }

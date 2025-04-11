@@ -11,7 +11,9 @@ import { FormsModule } from '@angular/forms';
 	standalone: true,
 })
 export class ConfigThemeComponent {
+	// initialization
 	themes: [string, string][] = [];
+	// get config or default to gbD
 	theme: string = getConfig('theme') || 'gruvboxDark';
 
 	constructor() {
@@ -25,6 +27,7 @@ export class ConfigThemeComponent {
 		});
 	}
 
+	// update theme configuration callback
 	updateConfig() {
 		setConfig('theme', this.theme);
 	}

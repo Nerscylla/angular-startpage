@@ -1,0 +1,16 @@
+{
+	"themeColors": {
+		"gruvboxDark": {
+			"bgColor": "#282828",
+			"fgColor": "#fbf1c7",
+			"accentColor": "#fb4934",
+			"widgetColor": "#1d2021"
+		},
+		"baumColored": {
+			"bgColor": "#062726",
+			"fgColor": "#E0E2DB",
+			"accentColor": "#6247AA",
+			"widgetColor": "#102B3F"
+		}
+	}
+}

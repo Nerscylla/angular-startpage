@@ -7,6 +7,7 @@ import { ConfigGreetingComponent } from './components/config-greeting/config-gre
 import { ConfigBangsNoBangComponent } from './components/config-bangs-no-bang/config-bangs-no-bang.component';
 import { ConfigCustomPageTitleComponent } from './components/config-custom-page-title/config-custom-page-title.component';
 import { ConfigThemeComponent } from './components/config-theme/config-theme.component';
+import { ConfigFontComponent } from './components/config-font/config-font.component';
 
 @Component({
 	selector: 'app-config',
@@ -19,6 +20,7 @@ import { ConfigThemeComponent } from './components/config-theme/config-theme.com
 		ConfigBangsNoBangComponent,
 		ConfigCustomPageTitleComponent,
 		ConfigThemeComponent,
+		ConfigFontComponent,
 	],
 	templateUrl: './config.component.html',
 	styleUrl: './config.component.scss',

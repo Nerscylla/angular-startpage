@@ -1,0 +1,12 @@
+<div class="center-col-flex">
+    <div class="center-row-flex">
+        <label for="enable-custom-page-title">Enable Custom Page Title:</label>
+        <input type="checkbox" name="enable-custom-page-title" id="enable-custom-page-title"
+            [(ngModel)]="enableCustomPageTitle" (change)="updateConfig()">
+    </div>
+    <div class="center-row-flex" *ngIf="enableCustomPageTitle">
+        <label for="custom-page-title">Custom Page Title:</label>
+        <input type="text" name="custom-page-title" id="custom-page-title" [(ngModel)]="customPageTitle"
+            (change)="updateConfig()">
+    </div>
+</div>

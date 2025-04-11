@@ -10,12 +10,13 @@
   - [X] Bangs without prefix if enabled
   - [X] Reddit ("u/" and "r/") integration
   - [X] styling
-  - [X] customise search engine
+  - [ ] customise search engine
   - [ ] icon
 - [ ] clock
   - [X] working
   - [ ] styling
   - [ ] greeting display
+- [X] Custom Page Title
 - [ ] config
   - [X] Bangs without prefix
   - [X] Greeting
@@ -23,6 +24,7 @@
   - [ ] completely custom search engine
   - [X] background image(-s)
   - [ ] layout
+  - [X] Custom Page Title
   - [X] reddit integration toggle
   - [ ] bookmarks
   - [ ] themes

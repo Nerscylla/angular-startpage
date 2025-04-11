@@ -10,24 +10,28 @@ import { setConfig, getConfig } from '../helpers/configurationHelper';
 	styleUrl: './home-page.component.scss',
 })
 export class HomePageComponent implements OnInit {
-	wallpaperUrls: string[] = [];
-	wallpaperIndex: number = 0;
+	// get wallpaper related stuff from config or load defaults
+	wallpaperUrls: string[] = getConfig('wallpaperUrls') || [];
+	wallpaperIndex: number = getConfig('wallpaperCurrentIndex') || 0;
 
 	ngOnInit(): void {
-		this.wallpaperIndex = getConfig('wallpaperCurrentIndex') || 0;
-		this.wallpaperUrls = getConfig('wallpaperUrls');
+		// check if custom wallpapers are supposed to be used
 		if (this.wallpaperUrls && this.wallpaperUrls.length > 0) {
 			this.setBodyBackground();
 		}
 	}
 
 	setBodyBackground() {
+		// get the next wallpapers index
 		this.wallpaperIndex = ++this.wallpaperIndex % this.wallpaperUrls.length;
+		// use the wallpaper at index
 		this.applyBodyBackground(this.wallpaperUrls[this.wallpaperIndex]);
+		// save the next wallpapers index
 		setConfig('wallpaperCurrentIndex', this.wallpaperIndex);
 	}
 
 	applyBodyBackground(url: string) {
+		// applies the background image
 		document.body.style.backgroundImage = `url('${url}')`;
 		document.body.style.backgroundSize = 'cover';
 		document.body.style.backgroundPosition = 'center';

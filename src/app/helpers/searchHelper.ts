@@ -80,6 +80,7 @@ let redditLinking = (searchString: string) => {
 };
 
 let defaultEngineSearch = (searchString: string) => {
+	// search with default engine
 	return engines[preferedSearchEngine as keyof typeof engines] + searchString;
 };
 

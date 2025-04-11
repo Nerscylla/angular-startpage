@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 	selector: 'config-font',
 	imports: [FormsModule],
 	templateUrl: './config-font.component.html',
-	styleUrl: './config-font.component.scss',
 })
 export class ConfigFontComponent {
 	fontFamily: string = getConfig('fontFamily') || 'Roboto';

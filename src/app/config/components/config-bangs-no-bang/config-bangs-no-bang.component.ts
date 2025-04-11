@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 	selector: 'config-bangs-no-bang',
 	imports: [FormsModule],
 	templateUrl: './config-bangs-no-bang.component.html',
-	styleUrl: './config-bangs-no-bang.component.scss',
 })
 export class ConfigBangsNoBangComponent implements OnInit {
 	bangsNoBang: boolean = false;

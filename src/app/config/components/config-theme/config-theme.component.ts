@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 	selector: 'config-theme',
 	imports: [CommonModule, FormsModule],
 	templateUrl: './config-theme.component.html',
-	styleUrl: './config-theme.component.scss',
 	standalone: true,
 })
 export class ConfigThemeComponent {

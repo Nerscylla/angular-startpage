@@ -6,7 +6,6 @@ import { getConfig, setConfig } from '../../../helpers/configurationHelper';
 	selector: 'config-reddit',
 	imports: [FormsModule],
 	templateUrl: './config-reddit.component.html',
-	styleUrl: './config-reddit.component.scss',
 })
 export class ConfigRedditComponent implements OnInit {
 	redditBoxChecked: boolean = false;

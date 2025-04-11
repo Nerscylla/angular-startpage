@@ -9,7 +9,6 @@ const { engines } = barData;
 	selector: 'config-engine',
 	imports: [FormsModule, CommonModule],
 	templateUrl: './config-engine.component.html',
-	styleUrl: './config-engine.component.scss',
 })
 export class ConfigEngineComponent implements OnInit {
 	engine: string = '';

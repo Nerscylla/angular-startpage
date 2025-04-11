@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 	selector: 'config-greeting',
 	imports: [FormsModule, CommonModule],
 	templateUrl: './config-greeting.component.html',
-	styleUrl: './config-greeting.component.scss',
 })
 export class ConfigGreetingComponent implements OnInit {
 	greetingEnable: boolean = false;

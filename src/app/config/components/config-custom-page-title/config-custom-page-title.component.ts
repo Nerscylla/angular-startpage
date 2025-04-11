@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 	selector: 'config-custom-page-title',
 	imports: [FormsModule, CommonModule],
 	templateUrl: './config-custom-page-title.component.html',
-	styleUrl: './config-custom-page-title.component.scss',
 })
 export class ConfigCustomPageTitleComponent implements OnInit {
 	enableCustomPageTitle: boolean = false;

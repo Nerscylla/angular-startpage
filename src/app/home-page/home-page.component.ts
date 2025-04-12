@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ClockComponent } from './components/clock/clock.component';
 import { SearchBarComponent } from './components/searchBar/searchBar.component';
 import { setConfig, getConfig } from '../helpers/configurationHelper';
+import { SettingsIconComponent } from './components/settings-icon/settings-icon.component';
 
 @Component({
 	selector: 'app-home-page',
-	imports: [ClockComponent, SearchBarComponent],
+	imports: [ClockComponent, SearchBarComponent, SettingsIconComponent],
 	templateUrl: './home-page.component.html',
 	styleUrl: './home-page.component.scss',
 })

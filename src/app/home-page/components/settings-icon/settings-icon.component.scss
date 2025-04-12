@@ -1,0 +1,45 @@
+div {
+	background-color: var(--bg-color);
+	border: 3px var(--accent-color) solid;
+	position: absolute;
+	border-radius: 200px;
+	width: 1.5rem;
+	height: 1.5rem;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	transition: 500ms;
+}
+
+div:hover {
+	border-width: 5px;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: var(--fg-color);
+	cursor: pointer;
+}
+
+button:hover {
+	animation: rotat 500ms ease-in-out 0ms 1 forwards;
+}
+
+div:has(button:hover) {
+	transform: scale(150%);
+}
+
+span {
+	font-size: 1rem;
+}
+
+@keyframes rotat {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}

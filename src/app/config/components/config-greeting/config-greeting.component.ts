@@ -14,6 +14,11 @@ export class ConfigGreetingComponent {
 	greetingPrefixEnable: boolean = getConfig('greetingPrefixEnable') || false;
 	greetingPrefix: string = getConfig('greetingPrefix') || 'Hello,';
 	greetingText: string = getConfig('greetingText') || 'User';
+	greetingPreview: string = '';
+
+	constructor() {
+		this.updateGreetingPreview();
+	}
 
 	// write changed configuration callback
 	updateConfig() {
@@ -21,5 +26,12 @@ export class ConfigGreetingComponent {
 		setConfig('greetingPrefixEnable', this.greetingPrefixEnable);
 		setConfig('greetingPrefix', this.greetingPrefix);
 		setConfig('greetingText', this.greetingText);
+		this.updateGreetingPreview();
+	}
+
+	updateGreetingPreview() {
+		this.greetingPreview =
+			(this.greetingPrefixEnable ? this.greetingPrefix + ', ' : '') +
+			this.greetingText;
 	}
 }

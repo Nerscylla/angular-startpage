@@ -18,4 +18,8 @@
         <label for="greeting-text">Greeting Text:</label>
         <input type="text" name="greeting-text" id="greeting-text" [(ngModel)]="greetingText" (change)="updateConfig()">
     </div>
+    <div class="center-row-flex" *ngIf="greetingEnable">
+        <span>Preview: </span>
+        <span>"{{greetingPreview}}"</span>
+    </div>
 </div>

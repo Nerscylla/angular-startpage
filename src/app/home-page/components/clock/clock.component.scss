@@ -1,19 +1,16 @@
-:host {
-	// self center in it self
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-
-span {
+#time-widget-container {
 	// coloring
 	background-color: var(--widget-color);
 	color: var(--fg-color);
 	// sizing
+	padding: 5px 15px;
+	// border
+	border: 3px var(--accent-color) solid;
+	border-radius: 10px;
+}
+
+span {
+	// sizing
 	width: min-content;
 	height: min-content;
-	padding: 5px 15px;
-	// rounding
-	border-radius: 10px;
 }

@@ -1,2 +1,10 @@
 <!DOCTYPE html>
-<span>{{ currentTime }}</span>
+<div class="center-row-flex">
+    <div id="time-widget-container" class="center-col-flex">
+        <div class="center-row-flex">
+            <span *ngIf="greetingPrefixEnable && greetingEnable">{{greetingPrefix}}</span>
+            <span *ngIf="greetingEnable">{{greetingText}}</span>
+        </div>
+        <span>{{currentTime}}</span>
+    </div>
+</div>

@@ -1,12 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { getConfig } from '../../../helpers/configurationHelper';
+import { CommonModule } from '@angular/common';
 
 @Component({
+	imports: [CommonModule],
 	selector: 'clock-component',
 	templateUrl: './clock.component.html',
 	styleUrls: ['./clock.component.scss'],
 })
 export class ClockComponent implements OnInit {
 	currentTime: string = '';
+	greetingPrefix: string = getConfig('greetingPrefix') + ',' || 'Hello,';
+	greetingText: string = getConfig('greetingText') || 'User.';
+	greetingEnable: boolean = getConfig('greetingEnable') || false;
+	greetingPrefixEnable: boolean = getConfig('greetingPrefixEnable') || false;
 
 	ngOnInit(): void {
 		// interval

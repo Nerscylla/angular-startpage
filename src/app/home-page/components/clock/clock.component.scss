@@ -11,6 +11,8 @@
 
 span {
 	// sizing
-	width: min-content;
+	width: 100%;
+	max-width: max-content;
+	word-wrap: break-word;
 	height: min-content;
 }

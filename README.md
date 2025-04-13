@@ -15,7 +15,8 @@
 - [ ] clock
   - [X] working
   - [ ] styling
-  - [ ] greeting display
+  - [X] greeting display
+  - date
 - [X] Custom Page Title
 - [ ] config
   - [X] Bangs without prefix
@@ -27,8 +28,8 @@
   - [X] Custom Page Title
   - [X] reddit integration toggle
   - [ ] bookmarks
-  - [ ] themes
-    - [ ] custom colors
+  - [X] themes
+    - [X] custom colors
     - [X] gruvbox
-    - [ ] nord
-    - [ ] everforest
+    - [X] nord
+    - [X] everforest

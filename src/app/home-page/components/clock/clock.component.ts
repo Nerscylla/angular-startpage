@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ClockComponent implements OnInit {
 	currentTime: string = '';
+	currentDate: string = '';
 	greetingPrefix: string = getConfig('greetingPrefix') + ',' || 'Hello,';
 	greetingText: string = getConfig('greetingText') || 'User.';
 	greetingEnable: boolean = getConfig('greetingEnable') || false;
@@ -24,5 +25,6 @@ export class ClockComponent implements OnInit {
 		// self explanatory
 		const now = new Date();
 		this.currentTime = now.toLocaleTimeString();
+		this.currentDate = now.toLocaleDateString();
 	}
 }

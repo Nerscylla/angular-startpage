@@ -16,7 +16,7 @@
   - [X] working
   - [ ] styling
   - [X] greeting display
-  - date
+  - [X] date
 - [X] Custom Page Title
 - [ ] config
   - [X] Bangs without prefix

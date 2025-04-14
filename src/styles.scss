@@ -22,6 +22,7 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-align: center;
 }
 
 .center-row-flex {
@@ -49,6 +50,7 @@ input[type="checkbox"] {
 	background-color: var(--fg-color);
 	cursor: pointer;
 	transition: 200ms;
+	font-size: 0.75rem;
 
 	&:checked {
 		background-color: var(--accent-color);
@@ -74,13 +76,13 @@ select {
 }
 
 input[type="text"] {
-	height: 1rem;
 	border: 3px solid var(--accent-color);
 	border-radius: 5px;
 	background-color: var(--bg-color);
 	color: var(--fg-color);
-	padding: 0 2px;
+	padding: 2px 4px;
 	transition: 200ms;
+	font-size: 1rem;
 
 	&:focus {
 		outline: none;
@@ -102,9 +104,30 @@ select {
 	font-family: inherit;
 	outline: none;
 	cursor: pointer;
+	font-size: 1rem;
 
 	option {
 		background-color: var(--bg-color);
 		color: var(--fg-color);
+		font-size: 1rem;
 	}
+}
+
+button {
+	border: 3px var(--accent-color) solid;
+	outline: none;
+	border-radius: 3px;
+	background-color: var(--bg-color);
+	padding: 2px 10px;
+	color: var(--fg-color);
+	font-size: 1rem;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+ul > li,
+ol > li {
+	text-align: left;
 }

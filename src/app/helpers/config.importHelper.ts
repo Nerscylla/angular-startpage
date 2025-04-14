@@ -7,6 +7,7 @@ import { ConfigBangsNoBangComponent } from '../config/components/config-bangs-no
 import { ConfigCustomPageTitleComponent } from '../config/components/config-custom-page-title/config-custom-page-title.component';
 import { ConfigThemeComponent } from '../config/components/config-theme/config-theme.component';
 import { ConfigFontComponent } from '../config/components/config-font/config-font.component';
+import { ConfigDebugDataComponent } from '../config/components/config-debug-data/config-debug-data.component';
 
 let importedComponents: any = [
 	ConfigContainerComponent,
@@ -18,6 +19,7 @@ let importedComponents: any = [
 	ConfigCustomPageTitleComponent,
 	ConfigThemeComponent,
 	ConfigFontComponent,
+	ConfigDebugDataComponent,
 ];
 
 export { importedComponents };

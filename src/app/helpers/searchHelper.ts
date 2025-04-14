@@ -12,7 +12,7 @@ let bangsNoBang: boolean = getConfig('bangsNoBang') || false;
 let search = (searchString: string) => {
 	// check for valid uri first
 	if (
-		!/^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/.test(
+		!/^(https?:\/\/)?([\da-z.-]+)\.([a-z.A-Z]{2,6})\/([\w .-?]*)*\/?$/.test(
 			searchString
 		)
 	) {

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <ul>
-    <!-- list wallpaper urls -->
-    <li *ngFor="let url of wallpaperUrls; let i = index">
-        <a href="{{url}}">{{url}}</a>
-        <button (click)="removeWallpaperUrl(i)">X</button>
-    </li>
+	<!-- list wallpaper urls -->
+	<li *ngFor="let url of wallpaperUrls; let i = index">
+		<!-- link all added urls, cut of at length 50 -->
+		<a href="{{url}}">{{url | slice:0:50}}{{url.length > 50 ? '...' : ''}}</a>
+		<button (click)="removeWallpaperUrl(i)">X</button>
+	</li>
 </ul>
 <div class="center-row-flex">
-    <label for="wallURL">New Wallpaper URL:</label>
-    <input type="text" name="wallURL" id="wallURL" [(ngModel)]="newWallpaperUrl" (keydown.enter)="addWallpaperUrl()" />
+	<label for="wallURL">New Wallpaper URL:</label>
+	<input type="text" name="wallURL" id="wallURL" [(ngModel)]="newWallpaperUrl" (keydown.enter)="addWallpaperUrl()" />
 </div>

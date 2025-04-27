@@ -9,8 +9,12 @@ import { CommonModule } from '@angular/common';
 	styleUrls: ['./clock.component.scss'],
 })
 export class ClockComponent implements OnInit {
+	// init clock
 	currentTime: string = '';
 	currentDate: string = '';
+
+	// init greeting
+	// TODO: move greeting to seperate component
 	greetingPrefix: string = getConfig('greetingPrefix') + ',' || 'Hello,';
 	greetingText: string = getConfig('greetingText') || 'User.';
 	greetingEnable: boolean = getConfig('greetingEnable') || false;

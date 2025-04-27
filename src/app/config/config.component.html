@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <div id="cont">
+	<!-- headings -->
 	<h1><u>Startpage Configuration</u></h1>
 	<h5>Click on "<span class="material-symbols-outlined">chevron_backward</span>" or the heading to open section</h5>
+
+
+	<!-- general configuration -->
 	<config-container title="General">
 		<config-container title="Page Title" [collapseDefault]=true>
 			<config-custom-page-title></config-custom-page-title>
@@ -20,16 +24,25 @@
 		</config-container>
 	</config-container>
 
+
+	<!-- configuration related to the search behaviour and bar -->
 	<config-container title="Search">
 		<config-engine></config-engine>
 		<config-reddit></config-reddit>
 		<config-bangs-no-bang></config-bangs-no-bang>
 	</config-container>
 
+
+	<!-- configuration related to the greeting -->
 	<config-container title="Greeting">
 		<config-greeting></config-greeting>
 	</config-container>
 
+
+	<!-- TODO: configuration for the clock -->
+
+
+	<!-- debug section -->
 	<config-container title="Debug" [collapseDefault]=true>
 		<config-debug-data></config-debug-data>
 	</config-container>

@@ -10,13 +10,14 @@ import { getConfig } from '../../../helpers/configurationHelper';
 	styleUrls: ['./searchBar.component.scss'],
 })
 export class SearchBarComponent {
+	// init
 	searchvalue: string = '';
 	placeholderText: string = 'Search...';
 
 	constructor() {
 		// set placeholder
 		if (getConfig('preferedSearchEngine')) {
-			this.placeholderText = 'search ' + getConfig('preferedSearchEngine');
+			this.placeholderText = 'Search ' + getConfig('preferedSearchEngine');
 		}
 	}
 

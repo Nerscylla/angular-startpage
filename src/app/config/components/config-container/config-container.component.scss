@@ -1,6 +1,7 @@
 .flexcont {
 	// sizing
 	width: 100%;
+
 	// positiniong childern
 	display: flex;
 	flex-direction: column;
@@ -10,20 +11,27 @@
 }
 
 :host {
+	// minimal padding for viewing pleasure
 	padding: 1%;
+
 	// border
 	border: var(--accent-color) 3px solid;
 	border-radius: 5px;
 }
 
-* {
+span {
+	// animate the < button
 	transition: 250ms;
 }
 
 .confcont {
 	// margins to not look bad
 	margin: 10px;
+
+	// fix the width if collapsed
 	width: 100%;
+
+	// gap in between sub elements
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -1,9 +1,11 @@
+// set the width of the config containers
 config-container {
 	width: min(100%, 1200px);
 	display: block;
 	margin: 10px;
 }
 
+// netly arrange everything on the config page
 div#cont {
 	width: 100%;
 	display: flex;

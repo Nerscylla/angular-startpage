@@ -1,40 +1,56 @@
 div {
+	// color
 	background-color: var(--bg-color);
+
+	// border
 	border: 3px var(--accent-color) solid;
-	position: absolute;
 	border-radius: 200px;
-	width: 1.5rem;
-	height: 1.5rem;
+
+	// position
+	position: absolute;
 	top: 1rem;
 	right: 1rem;
+
+	// sizing
+	width: 1.5rem;
+	height: 1.5rem;
+
+	// other
 	cursor: pointer;
 	transition: 500ms;
 }
 
+// hover fx
 div:hover {
 	border-width: 5px;
 }
 
 button {
+	// make button act as icon only mostly
 	background-color: transparent;
 	border: none;
 	outline: none;
+
 	color: var(--fg-color);
 	cursor: pointer;
 }
 
+// button hover rotation
 button:hover {
 	animation: rotat 500ms ease-in-out 0ms 1 forwards;
 }
 
+// scale up on hover
 div:has(button:hover) {
 	transform: scale(150%);
 }
 
+// for some reason font size is off otherwise
 span {
 	font-size: 1rem;
 }
 
+// rotation animation
 @keyframes rotat {
 	0% {
 		rotate: 0deg;

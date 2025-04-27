@@ -29,6 +29,7 @@ export class ConfigGreetingComponent {
 		this.updateGreetingPreview();
 	}
 
+	// preview of the greeting should be updated on changes
 	updateGreetingPreview() {
 		this.greetingPreview =
 			(this.greetingPrefixEnable ? this.greetingPrefix + ', ' : '') +

@@ -17,6 +17,7 @@ export class ConfigThemeComponent {
 	theme: string = getConfig('theme') || 'gruvboxDark';
 
 	constructor() {
+		// place the theme colors in the dropdown
 		Object.keys(themeColors).forEach((key) => {
 			this.themes.push([
 				key,

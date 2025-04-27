@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <div class="center-row-flex">
-    <div id="time-widget-container" class="center-col-flex">
-        <div class="center-row-flex">
-            <span *ngIf="greetingPrefixEnable && greetingEnable">{{greetingPrefix}}</span>
-            <span *ngIf="greetingEnable">{{greetingText}}</span>
-        </div>
-        <span>{{currentDate}}</span>
-        <span>{{currentTime}}</span>
-    </div>
+	<div id="time-widget-container" class="center-col-flex">
+		<!-- greeting; TODO: move to different component -->
+		<div class="center-row-flex">
+			<span *ngIf="greetingPrefixEnable && greetingEnable">{{greetingPrefix}}</span>
+			<span *ngIf="greetingEnable">{{greetingText}}</span>
+		</div>
+		<!-- datetime -->
+		<span>{{currentDate}}</span>
+		<span>{{currentTime}}</span>
+	</div>
 </div>

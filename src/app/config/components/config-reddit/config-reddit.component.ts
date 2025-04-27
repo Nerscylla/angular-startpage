@@ -8,8 +8,10 @@ import { getConfig, setConfig } from '../../../helpers/configurationHelper';
 	templateUrl: './config-reddit.component.html',
 })
 export class ConfigRedditComponent {
+	// data binding
 	redditBoxChecked: boolean = getConfig('redditRedirects') || false;
 
+	// update the configuration with current data
 	updateConfig() {
 		setConfig('redditRedirects', this.redditBoxChecked);
 	}

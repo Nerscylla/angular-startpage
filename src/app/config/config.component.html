@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <div id="cont">
-	<config-container>
+	<h1><u>Startpage Configuration</u></h1>
+	<h5>Click on "<span class="material-symbols-outlined">chevron_backward</span>" or the heading to open section</h5>
+	<config-container title="General">
+		<config-container title="Page Title" [collapseDefault]=true>
+			<config-custom-page-title></config-custom-page-title>
+		</config-container>
+
+		<config-container title="Font" [collapseDefault]=true>
+			<config-font></config-font>
+		</config-container>
+
+		<config-container title="Wallpapers" [collapseDefault]=true>
+			<config-wallpaper></config-wallpaper>
+		</config-container>
+
+		<config-container title="Theme" [collapseDefault]=true>
+			<config-theme></config-theme>
+		</config-container>
+	</config-container>
+
+	<config-container title="Search">
 		<config-engine></config-engine>
-	</config-container>
-	<config-container>
 		<config-reddit></config-reddit>
-	</config-container>
-	<config-container>
-		<config-wallpaper></config-wallpaper>
-	</config-container>
-	<config-container>
-		<config-greeting></config-greeting>
-	</config-container>
-	<config-container>
 		<config-bangs-no-bang></config-bangs-no-bang>
 	</config-container>
-	<config-container>
-		<config-custom-page-title></config-custom-page-title>
+
+	<config-container title="Greeting">
+		<config-greeting></config-greeting>
 	</config-container>
-	<config-container>
-		<config-theme></config-theme>
-	</config-container>
-	<config-container>
-		<config-font></config-font>
-	</config-container>
-	<config-container>
+
+	<config-container title="Debug" [collapseDefault]=true>
 		<config-debug-data></config-debug-data>
 	</config-container>
 </div>

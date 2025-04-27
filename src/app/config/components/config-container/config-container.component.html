@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <div class="flexcont">
-    <div class="confcont">
-        <ng-content></ng-content>
-    </div>
+	<h2 (click)="this.toggleCollapse()" style="user-select: none;">
+		{{title}}
+		<span class="material-symbols-outlined" [style.transform]="'rotate(' + (collapsed ? 0 : -90) + 'deg)'">
+			chevron_backward
+		</span>
+	</h2>
+	<div class="confcont" *ngIf="!collapsed">
+		<ng-content></ng-content>
+	</div>
 </div>

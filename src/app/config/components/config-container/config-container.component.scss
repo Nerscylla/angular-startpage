@@ -1,17 +1,32 @@
 .flexcont {
 	// sizing
 	width: 100%;
-	// border
-	border: var(--accent-color) 3px solid;
-	border-radius: 5px;
 	// positiniong childern
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 1%;
+}
+
+:host {
+	padding: 1%;
+	// border
+	border: var(--accent-color) 3px solid;
+	border-radius: 5px;
+}
+
+* {
+	transition: 250ms;
 }
 
 .confcont {
 	// margins to not look bad
 	margin: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }

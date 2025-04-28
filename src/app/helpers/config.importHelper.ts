@@ -8,6 +8,7 @@ import { ConfigCustomPageTitleComponent } from '../config/components/config-cust
 import { ConfigThemeComponent } from '../config/components/config-theme/config-theme.component';
 import { ConfigFontComponent } from '../config/components/config-font/config-font.component';
 import { ConfigDebugDataComponent } from '../config/components/config-debug-data/config-debug-data.component';
+import { ConfigSearchButtonComponent } from '../config/components/config-search-button/config-search-button.component';
 
 let importedComponents: any = [
 	ConfigContainerComponent,
@@ -20,6 +21,7 @@ let importedComponents: any = [
 	ConfigThemeComponent,
 	ConfigFontComponent,
 	ConfigDebugDataComponent,
+	ConfigSearchButtonComponent,
 ];
 
 export { importedComponents };

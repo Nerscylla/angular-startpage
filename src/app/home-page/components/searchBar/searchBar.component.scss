@@ -33,3 +33,17 @@ input:focus {
 	// focus effect
 	border-width: 5px;
 }
+
+button {
+	height: calc(30% - 10px);
+	aspect-ratio: 1;
+	margin-left: 2%;
+	border-radius: 100%;
+	background-color: var(--widget-color);
+}
+
+button:hover {
+	background-color: var(--bg-color);
+	border-width: 5px;
+	scale: 1.1;
+}

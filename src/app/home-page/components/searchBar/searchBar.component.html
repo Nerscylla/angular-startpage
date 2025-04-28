@@ -1,2 +1,7 @@
 <!DOCTYPE html>
 <input autofocus type="text" [placeholder]="placeholderText" [(ngModel)]="searchvalue" (keydown.enter)="onSearch()">
+<button (click)="onSearch()" *ngIf="searchButtonEnabled">
+	<span class="material-symbols-outlined">
+		search
+	</span>
+</button>

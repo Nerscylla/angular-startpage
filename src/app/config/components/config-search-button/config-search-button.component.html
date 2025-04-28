@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<div class="center-row-flex">
+	<label for="reddit-checkbox">Enable Button to search</label>
+	<input type="checkbox" name="search-button-checkbox" id="search-button-checkbox" [(ngModel)]="searchButtonEnabled"
+		(change)="updateConfig()">
+</div>

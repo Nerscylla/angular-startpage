@@ -66,6 +66,12 @@
 			"fgColor": "#5C6A72",
 			"widgetColor": "#FDF6E3"
 		},
+		"flexogi": {
+			"accentColor": "#879A39",
+			"bgColor": "#100F0F",
+			"fgColor": "#CECDC3",
+			"widgetColor": "#1C1B1A"
+		},
 		"foggyMorning": {
 			"accentColor": "#dcdcdc",
 			"bgColor": "#f5f5f5",

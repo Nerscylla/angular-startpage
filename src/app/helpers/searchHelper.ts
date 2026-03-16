@@ -48,13 +48,19 @@ let bangsChecking = (searchString: string) => {
 
 let bangsSearchFunc = (searchStringArr: string[], searchString: string) => {
 	// go reddit if there is no valid bangs search
-	if (!bangsSearch[searchStringArr[0] as keyof typeof bangsSearch]) {
+	if (
+		!bangsSearch[searchStringArr[0] as keyof typeof bangsSearch] &&
+		!engines[searchStringArr[0] as keyof typeof engines]
+	) {
 		return redditLinking(searchString);
 	} else {
 		// go to searchable bangs
 		let firstWord: any = searchStringArr.shift();
 		let extension: string = searchStringArr.join('%20');
-		return bangsSearch[firstWord as keyof typeof bangsSearch] + extension;
+		return (
+			(bangsSearch[firstWord as keyof typeof bangsSearch] ||
+				engines[firstWord as keyof typeof engines]) + extension
+		);
 	}
 };
 

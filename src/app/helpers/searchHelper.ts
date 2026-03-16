@@ -13,14 +13,15 @@ let search = (searchString: string) => {
 	// check for valid uri first
 	if (
 		!/^(https?:\/\/)?([\da-z.-]+)\.([a-z.A-Z]{2,6})\/([\w .-?]*)*\/?$/.test(
-			searchString
+			searchString,
 		)
 	) {
 		// go on to bangs if there is no uri
 		return bangsChecking(searchString.trim());
 	} else {
 		// add https:// if !http && !https present
-		return searchString.startsWith('http') || searchString.startsWith('https')
+		return searchString.startsWith('http') ||
+			searchString.startsWith('https')
 			? searchString
 			: `https://${searchString}`;
 	}

@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 		// set the custom page title
 		if (getConfig('enableCustomPageTitle')) {
 			this.titleService.setTitle(
-				getConfig('customPageTitle') || this.defaultTitle
+				getConfig('customPageTitle') || this.defaultTitle,
 			);
 		}
 		// call function to update font
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
 		let fontLink: HTMLElement = document.createElement('link');
 		fontLink.setAttribute(
 			'href',
-			`https://fonts.googleapis.com/css2?family=${this.fontFamily}`
+			`https://fonts.googleapis.com/css2?family=${this.fontFamily}`,
 		);
 		fontLink.setAttribute('rel', 'stylesheet');
 		document.head.appendChild(fontLink);

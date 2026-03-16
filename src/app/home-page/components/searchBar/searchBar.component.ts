@@ -21,7 +21,8 @@ export class SearchBarComponent {
 			getConfig('searchButtonEnabled') == false ? false : true;
 		// set placeholder
 		if (getConfig('preferedSearchEngine')) {
-			this.placeholderText = 'Search ' + getConfig('preferedSearchEngine');
+			this.placeholderText =
+				'Search ' + getConfig('preferedSearchEngine');
 		}
 	}
 

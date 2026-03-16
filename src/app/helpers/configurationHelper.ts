@@ -1,6 +1,6 @@
 // initially get configuration
 let configuration: { [key: string]: any } = JSON.parse(
-	localStorage.getItem('angular-startpage:config') || '{}'
+	localStorage.getItem('angular-startpage:config') || '{}',
 );
 
 // get specifig key from configuration
@@ -18,7 +18,7 @@ let setConfig: setConfigFunc = (configKey, configVal) => {
 	// store in localStorage
 	localStorage.setItem(
 		'angular-startpage:config',
-		JSON.stringify(configuration)
+		JSON.stringify(configuration),
 	);
 };
 

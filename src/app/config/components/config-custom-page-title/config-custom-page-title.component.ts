@@ -10,7 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class ConfigCustomPageTitleComponent {
 	// Get the configuration or default vals
-	enableCustomPageTitle: boolean = getConfig('enableCustomPageTitle') || false;
+	enableCustomPageTitle: boolean =
+		getConfig('enableCustomPageTitle') || false;
 	customPageTitle: string = getConfig('customPageTitle') || 'startpage';
 
 	// callback for writing changed configuration

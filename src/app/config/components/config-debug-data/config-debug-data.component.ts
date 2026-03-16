@@ -76,12 +76,15 @@ export class ConfigDebugDataComponent {
 			// information on the users time
 			time: {
 				stamp: timeStamp || 'not available',
-				zone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown',
+				zone:
+					Intl.DateTimeFormat().resolvedOptions().timeZone ||
+					'unknown',
 			},
 			// configuration or major mess up
 			config:
-				JSON.parse(localStorage.getItem('angular-startpage:config') || '{}') ||
-				'error parsing config',
+				JSON.parse(
+					localStorage.getItem('angular-startpage:config') || '{}',
+				) || 'error parsing config',
 			// available UA info
 			userAgent: {
 				browser: userAgentBrowser || 'unknown',
